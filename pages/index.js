@@ -12,12 +12,12 @@ export default function Home() {
 
         <script type="application/javascript">
     document.addEventListener('kpsdk-load', function () {
-        window.KPSDK.configure([
-            protocol: 'https',
+        window.KPSDK.configure({
+              protocol: 'https',
                 method: '*',
                 domain: 'verdant-llama-2f90a5.netlify.app',
                 path: '*'
-        ]);
+});
     });
 
 
